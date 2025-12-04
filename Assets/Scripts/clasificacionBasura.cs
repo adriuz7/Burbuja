@@ -85,4 +85,23 @@ public class clasificacionBasura : MonoBehaviour
             }
         }
     }
+    public void DepositarBasuraAndroid()
+    {
+        var basuraSeleccionada = inventario.ObtenerBasuraSeleccionada();
+
+        if (basuraSeleccionada != null && activarContenedor != null)
+        {
+            DepositarBasura(basuraSeleccionada, activarContenedor);
+        }
+    }
+    public bool EstaCercaContenedor()
+    {
+        return cercaContenedor;
+    }
+
+    public GameObject ObtenerContenedorActivado()
+    {
+        return activarContenedor;
+    }   
+
 }

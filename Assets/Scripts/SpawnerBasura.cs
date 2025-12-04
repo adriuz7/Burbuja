@@ -10,8 +10,8 @@ public class SpawnerBasura : MonoBehaviour
     public GameObject[] prefabsCartonPapel;
 
     [Header("Configuraciones de Spawn")]
-    public float intervaloInicial = 10f;
-    public float intervaloMinimo = 10f;
+    public float intervaloInicial = 5.5f;
+    public float intervaloMinimo = 6f;
     public float reduccionIntervalo = 0f;
     public float velocidadAumento = 0f;
     public float velocidadMaxima = 5f;
